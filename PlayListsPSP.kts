@@ -33,17 +33,17 @@ run{
                 "/" + noDrive.replace("\\", "/").replace("¥", "/")
 
             }
-            println("処理中だお: $converted")
+            println("処理中です: $converted")
             converted 
             }
             val outputText = outputTextlist.joinToString("\n")
-            println("変換は終わったお" + "<" + outputText + ">")
+            println("変換は終了しました" + "<" + outputText + ">")
             if (args[0].endsWith(".m3u8")) {
 
                 playLIst.writeText(outputText)
 
                
-                println("かきこめたお")
+                println("書き込めました")
             } else if (args[0].endsWith(".txt")) {
          
                     
@@ -59,13 +59,13 @@ run{
            
                 
                 
-                println("かきこめたお")   
+                println("書き込めました")   
             }
                
                 return@run
 
             }catch (e: Exception){       
-                println("エラーだお" + "\n" + e )         
+                println("エラーです" + "\n" + e )         
                 return@run
             }
         }
