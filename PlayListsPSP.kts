@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
 
 
         if (args.isEmpty()) {
-            println("使い方: ./readfile.kts <ファイル名>")
+            println("使い方: kotlin <このスクリプトのパス> <ファイル名>")
             return
         }
         println("今から処理を始めます")
